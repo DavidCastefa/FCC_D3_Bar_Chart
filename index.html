@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FCC D3 Bar Chart</title>
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <svg id="canvas">
+    <!-- It was easier to apply CSS to the title by withdrawing it from the svg...
+    <text x="25%" y="7%">
+      <tspan id="title">
+        USA Gross Domestic Product by Year
+      </tspan>
+      <tspan id="subtitle" x="40%" dy="1.2em">
+        (USD, Billions)
+      </tspan>
+    </text>
+   -->
+  </svg>
+
+  <div id="title-block">
+    <text id="title">USA Gross Domestic Product by Year<br></text>
+    <text id="subtitle">(USD, Billions)</text>
+  </div>
+
+  <div id="data-source">
+    <span>Data from
+      <a href="https://raw.githubusercontent.com/freeCodeCamp/ProjectReferenceData/master/GDP-data.json">
+        https://raw.githubusercontent.com/freeCodeCamp/ProjectReferenceData/master/GDP-data.json
+      </a> 
+    </span>
+  </div>
+
+  <div id="signature">
+    <small>by David Rhoton, 2021</small>
+  </div>
+
+</body>
+<script defer src="script.js"></script>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
